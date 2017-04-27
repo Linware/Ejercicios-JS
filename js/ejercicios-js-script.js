@@ -59,14 +59,25 @@ function analizar() {
  *******************************************************************
  */
 
+var numRangoMax;
+var numRangoMin;
+var numMaquina;
+var numPer;
+
 function adivinarNumero() {
-    var numMaquina = parseInt(Math.random() * 100 + 1);
+    numRangoMax = prompt("Elige un rango máximo");
+    console.log(numRangoMax);
+    numRangoMin = prompt("Elige un rango mínimo");
+    console.log(numRangoMin);
+    numMaquina = parseInt((Math.random() * numRangoMax) + numRangoMin);
     document.getElementById("text6").value = numMaquina;
     var salida = false;
 
+
     do {
-        var numPer = prompt("Introduce tu número");
+        numPer = prompt("Introduce tu número");
         console.log(numPer);
+
         console.log(numMaquina);
         if (numPer > numMaquina) {
             alert("El número es más pequeño");
