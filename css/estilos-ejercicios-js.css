@@ -140,7 +140,7 @@ table {
 /* FIN RESET */
 
 body {
-    background-color: #f4b57f;
+    background-color: #d6bfab;
 }
 
 main {
@@ -182,4 +182,5 @@ aside {
     border: 2px solid black;
     margin: auto;
     width: 200px;
+    padding: 5px;
 }

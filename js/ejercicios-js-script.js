@@ -1,7 +1,7 @@
 function consejos() {
 
     document.getElementById("trucos1").value = "Utiliza reverse(),join()...";
-
+    document.getElementById("trucos2").value = "Utiliza onclick";
 }
 
 
