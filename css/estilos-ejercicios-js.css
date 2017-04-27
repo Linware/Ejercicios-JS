@@ -162,3 +162,13 @@ section {
     border: 3px black solid;
     border-radius: 10px;
 }
+
+img {
+    width: 45vw;
+    height: 35vw;
+}
+
+button {
+    margin: 5px;
+    float: left;
+}
