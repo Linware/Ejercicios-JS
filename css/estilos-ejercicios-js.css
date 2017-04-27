@@ -139,6 +139,10 @@ table {
 
 /* FIN RESET */
 
+body {
+    background-color: #f4b57f;
+}
+
 main {
     text-align: center;
 }
