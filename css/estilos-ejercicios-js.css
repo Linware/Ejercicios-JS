@@ -165,6 +165,7 @@ section {
     border-radius: 10px;
     margin: auto;
     width: 800px;
+    padding: 5px;
 }
 
 img {
