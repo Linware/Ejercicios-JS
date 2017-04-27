@@ -1,3 +1,20 @@
+function consejos() {
+
+    document.getElementById("trucos1").value = "Utiliza reverse(),join()...";
+
+}
+
+
+
+
+/* FIN COMPORTAMIENTO WEB */
+
+/******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ */
+
 function copiarInvertir() {
 
     var corte = document.getElementById("text1").value;

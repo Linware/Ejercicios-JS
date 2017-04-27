@@ -140,8 +140,6 @@ table {
 /* FIN RESET */
 
 main {
-    margin: auto;
-    width: 800px;
     text-align: center;
 }
 
@@ -161,6 +159,8 @@ p {
 section {
     border: 3px black solid;
     border-radius: 10px;
+    margin: auto;
+    width: 800px;
 }
 
 img {
@@ -171,4 +171,11 @@ img {
 button {
     margin: 5px;
     float: left;
+}
+
+aside {
+    float: right;
+    border: 2px solid black;
+    margin: auto;
+    width: 200px;
 }
