@@ -59,15 +59,17 @@ function analizar() {
  *******************************************************************
  */
 
-var numRangoMax;
-var numRangoMin;
-var numMaquina;
-var numPer;
+var numRangoMax = 0;
+var numRangoMin = 0;
+var numMaquina = 0;
+var numPer = 0;
 
 function adivinarNumero() {
     numRangoMax = prompt("Elige un rango máximo");
+    numRangoMax = parseInt(numRangoMax);
     console.log(numRangoMax);
     numRangoMin = prompt("Elige un rango mínimo");
+    numRangoMin = parseInt(numRangoMin);
     console.log(numRangoMin);
     numMaquina = parseInt((Math.random() * numRangoMax) + numRangoMin);
     document.getElementById("text6").value = numMaquina;
