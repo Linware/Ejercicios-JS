@@ -64,12 +64,19 @@ var numRangoMin = 0;
 var numMaquina = 0;
 var numPer = 0;
 
+
 function adivinarNumero() {
     numRangoMax = prompt("Elige un rango máximo");
     numRangoMax = parseInt(numRangoMax);
+    if (numPer == null) {
+        break;
+    }
     console.log(numRangoMax);
     numRangoMin = prompt("Elige un rango mínimo");
     numRangoMin = parseInt(numRangoMin);
+    if (numPer == null) {
+        break;
+    }
     console.log(numRangoMin);
     numMaquina = parseInt((Math.random() * numRangoMax) + numRangoMin);
     document.getElementById("text6").value = numMaquina;
@@ -77,7 +84,11 @@ function adivinarNumero() {
 
 
     do {
+
         numPer = prompt("Introduce tu número");
+        if (numPer == null) {
+            break;
+        }
         console.log(numPer);
 
         console.log(numMaquina);
