@@ -2,6 +2,7 @@ function consejos() {
 
     document.getElementById("trucos1").value = "Utiliza reverse(),join()...";
     document.getElementById("trucos2").value = "Utiliza onclick";
+    document.getElementById("trucos3").value = "Prueba con un do/while";
 }
 
 
@@ -63,45 +64,47 @@ var numRangoMax = 0;
 var numRangoMin = 0;
 var numMaquina = 0;
 var numPer = 0;
+var intentos = 0;
 
 
 function adivinarNumero() {
     numRangoMax = prompt("Elige un rango máximo");
     numRangoMax = parseInt(numRangoMax);
-    if (numPer == null) {
+    /*if (numPer == null) {
         break;
-    }
+    }*/
     console.log(numRangoMax);
     numRangoMin = prompt("Elige un rango mínimo");
     numRangoMin = parseInt(numRangoMin);
-    if (numPer == null) {
+    /*if (numPer == null) {
         break;
-    }
+    }*/
     console.log(numRangoMin);
-    numMaquina = parseInt((Math.random() * numRangoMax) + numRangoMin);
+    numMaquina = parseInt((Math.random() * (numRangoMax - numRangoMin)) + numRangoMin, 10);
     document.getElementById("text6").value = numMaquina;
     var salida = false;
 
 
     do {
 
-        numPer = prompt("Introduce tu número");
-        if (numPer == null) {
+        numPer = prompt("Introduce tu número entre " + numRangoMax + " y " + numRangoMin);
+        /*if (numPer == null) {
             break;
-        }
+        }*/
         console.log(numPer);
 
         console.log(numMaquina);
         if (numPer > numMaquina) {
             alert("El número es más pequeño");
-            document.getElementById("text5").value = "El número es más pequeño";
+            //document.getElementById("text5").value = "El número es más pequeño";
         } else if (numPer < numMaquina) {
             alert("El número es más grande");
-            document.getElementById("text5").value = "El número es más grande";
+            //document.getElementById("text5").value = "El número es más grande";
         } else {
-            alert("Has ganado!");
+            alert("Has ganado! Tan solo te llevo " + intentos + " intentos");
             salida = true;
         }
+        intentos++;
     } while (!salida);
 
 }
