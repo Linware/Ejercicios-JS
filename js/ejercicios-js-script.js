@@ -3,6 +3,7 @@ function consejos() {
     document.getElementById("trucos1").value = "Utiliza reverse(),join()...";
     document.getElementById("trucos2").value = "Utiliza onclick";
     document.getElementById("trucos3").value = "Prueba con un do/while";
+    document.getElementById("trucos4").value = "Usa varias funciones";
 }
 
 
@@ -112,6 +113,55 @@ function adivinarNumero() {
 
 
 /* FIN EJERCICIO 3 */
+
+/******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ *******************************************************************
+ */
+
+function sumarNumero() { //No funciona
+    var x, y;
+    x = pedirEntero("Dame la x");
+    y = pedirEntero("Dame la y");
+    var resultado = x + y;
+    if (resultado != null) {
+        document.getElementById("text7").value = resultado;
+    } else {
+        escribir("Ha habido un error");
+    }
+}
+
+function pideEntero(textoMensaje) {
+    var dato = escribir(textoMensaje);
+    var entero = parseInt(dato);
+    var noEsEntero = isNaN(entero);
+
+    if (dato == null) {
+        return null;
+    }
+
+    if (noEsEntero) {
+        escribir("Dato no valido,se necesita un entero");
+        return null;
+    }
+    return entero;
+
+}
+
+function escribir(textoMensaje) {
+    prompt(textoMensaje);
+}
+/* FIN EJERCICIO 4 */
 
 /******************************************************************
  *******************************************************************
