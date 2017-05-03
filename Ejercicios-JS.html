@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicios JS</title>
-    <link rel="stylesheet" href="css/estilos-ejercicios-js.css">
-    <script src="js/ejercicios-js-script.js"></script>
+    <link rel="stylesheet" href="Ejercicios-JS/css/estilos-ejercicios-js.css">
+    <script src="Ejercicios-JS/js/ejercicios-js-script.js"></script>
 </head>
 
 <body>
     <main>
         <h1>Ejercicios</h1>
+        <aside>
+            <p>Tips:</p>
+            <input type="text" name="trucos1" id="trucos1">
+        </aside>
         <section>
-            <h2>Ejercicio 1</h2>
+            <h2>Ejercicio 1 <button onclick="consejos()" >Tips!!</button></h2>
             <p>Desarrollar una función que invierta los valores de un String,muestre por pantalla tanto el resultado de este como su número de caracteres.Crea un condicional que imprima "Palabra corta" si tiene 6 letras o menos,"Palabra normal" si tiene 7 y "Palabra larga" si tiene más de 7.</p>
             <p>
                 <input type="text" name="text1" id="text1" placeholder="Palabra">
@@ -26,6 +30,58 @@
                 <input type="text" name="text4" id="text4" placeholder="Tipo de palabra">
             </p>
         </section>
+        <!--/* FIN EJERCICIO 1 */
+
+*********************************************************************************************************************************************************************************
+
+  -->
+        <aside>
+            <p>Tips:</p>
+            <input type="text" name="trucos2" id="trucos2">
+        </aside>
+        <section>
+            <h2>Ejercicio 2 <button onclick="consejos()">Tips!!</button></h2>
+            <p>Cambiar una imagen por otra haciendo click en un botón</p>
+            <button onclick="document.getElementById('imagen').src='Ejercicios-JS/img/coche1.png'">Utilitario</button>
+            <img src="Ejercicios-JS/img/coche1.png " alt="coche2 " id="imagen">
+            <button onclick="document.getElementById( 'imagen').src='Ejercicios-JS/img/coche2.png'">Deportivo</button>
+        </section>
+        <!--/* FIN EJERCICIO 2 */
+
+*********************************************************************************************************************************************************************************
+
+  -->
+        <aside>
+            <p>Tips:</p>
+            <input type="text" name="trucos3" id="trucos3">
+        </aside>
+        <section>
+            <h2>Ejercicio 3 <button onclick="consejos()">Tips!!</button></h2>
+            <p>Adivina el número en el que piensa la máquina</p>
+            <button onclick="adivinarNumero()">Adivinar!!</button>
+            <input type="text" name="text5" id="text5">
+            <input type="text" name="text6" id="text6" placeholder="Valor objetivo">
+        </section>
+        <!--/* FIN EJERCICIO 3 */
+
+*********************************************************************************************************************************************************************************
+
+  -->
+        <aside>
+            <p>Tips:</p>
+            <input type="text" name="trucos4" id="trucos4">
+        </aside>
+        <section>
+            <h2>Ejercicio 4 <button onclick="consejos()">Tips!!</button></h2>
+            <p>Elige 2 valores para sumarlos</p>
+            <button onclick="sumarEntero()">Sumar!</button>
+            <input type="text" name="text7" id="text7" placeholder="Aqui va tu resultado">
+        </section>
+        <!--/* FIN EJERCICIO 4 */
+
+*********************************************************************************************************************************************************************************
+
+  -->
     </main>
 </body>
 
